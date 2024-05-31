@@ -9,13 +9,15 @@ def compute_determinant(x: list) -> int:
     return answer
 
 
-lst = [
-    [11, -3],
-    [-15, -2]
-]
-# -67
+if __name__ == '__main__':
+    lst = [
+        [1, -2, 3],
+        [4, 0, 6],
+        [-7, 8, 9]
+    ]
+    # 204
 
-print(compute_determinant(lst))
+    print(compute_determinant(lst))
 
 '''
 lst = [
@@ -44,4 +46,10 @@ lst = [
     [-1, 2, 0, 1]
 ]
 # -5
+
+lst = [
+    [11, -3],
+    [-15, -2]
+]
+# -67
 '''
