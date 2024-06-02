@@ -29,8 +29,6 @@ for i in range(n + 1):
             )
         )
 
-
-
 print(*ans_a)
 print(*ans_b)
 
