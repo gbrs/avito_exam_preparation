@@ -1,6 +1,7 @@
 from determinant import compute_determinant
 
 def adjoint(m: list):
+    size = len(m)
     adj_matrix = [[0] * size for _ in range(size)]
     for i in range(size):
         for j in range(size):
@@ -18,6 +19,7 @@ def adjoint(m: list):
 
 
 def inverse_matrix(m: list):
+    size = len(m)
     det = compute_determinant(m)
     if det != 0:
         inv_matrix = [[0] * size for _ in range(size)]
@@ -27,23 +29,17 @@ def inverse_matrix(m: list):
                 inv_matrix[i][j] = adj_matrix[i][j] / det
         return inv_matrix
 
+if __name__ == '__main__':
+    matrix = [
+        [0, 42],
+        [0, 54]
+    ]
 
-
-
-
-
-matrix = [
-    [0, 42],
-    [0, 54]
-]
-
-size = len(matrix)
-
-im = inverse_matrix(matrix)
-if im:
-    [print(*i) for i in inverse_matrix(matrix)]
-else:
-    print('Обратной матрицы не существует')
+    im = inverse_matrix(matrix)
+    if im:
+        [print(*i) for i in inverse_matrix(matrix)]
+    else:
+        print('Обратной матрицы не существует')
 
 '''
 matrix = [
