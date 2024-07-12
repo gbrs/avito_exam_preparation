@@ -1,9 +1,18 @@
-import sys
-
-lst = [[x for x in line.split()] for line in sys.stdin]
+# lst = [[x for x in line.split()] for line in sys.stdin]
 
 
-# lst = [['P', 'S'], ['S', 'P'], ['P', 'P'], ['P', 'S'], ['R', 'S'], ['P', 'R'], ['P', 'P'], ['S', 'S'], ['P', 'P'], ['P', 'S']]
+lst = [
+    ['P', 'S'],
+    ['S', 'P'],
+    ['P', 'P'],
+    ['P', 'S'],
+    ['R', 'S'],
+    ['P', 'R'],
+    ['P', 'P'],
+    ['S', 'S'],
+    ['P', 'P'],
+    ['P', 'S']
+]
 n = len(lst)
 
 m = 0
@@ -36,7 +45,22 @@ else:
     print(f'D: {d / n:.2%}')
     print(f'L: {w / n:.2%}')
 
+'''
+# можно ж было подсократить
+if m > w:
+    print('Костя')
 
+elif w > m:
+    print('Ксюша')
+    m, w = w, m
+
+else:
+    print('Ничья')
+
+print(f'W: {m / n:.2%}')
+print(f'D: {d / n:.2%}')
+print(f'L: {w / n:.2%}')
+'''
 
 
 

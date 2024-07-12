@@ -17,6 +17,3 @@ for i in range(n):
         answer[j][n - 1 - i] = lst[i][j]
 
 [print(*i) for i in answer]
-
-
-
