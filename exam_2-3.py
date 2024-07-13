@@ -9,7 +9,7 @@ B = ['TEST', '2000', '01', '01']
 C = ['POKEMON_GO', '2023', '04', '30']
 
 
-print(A, B, C)
+# print(A, B, C)
 
 # lst = [line for line in sys.stdin]
 
