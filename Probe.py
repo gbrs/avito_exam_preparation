@@ -1,3 +1,20 @@
+from random import random as r
+
+N = 100_000_000
+sm = 0
+for _ in range(N):
+    sm += (r() * 9)**2 + (r() * 76)**2
+
+print(sm / N)  # 1952.3159068910343   1951.9855425445724   1952.2920491424766
+
+"""
+
+from math import factorial as f
+
+print(f(12) / f(11) * f(43) / f(28) / f(15) * f(16) * f(39) / f(55))
+
+---------------------
+
 group_1 = [
     [1, 'КТИ', 112],
     [1, 'ВСИ', 105],
@@ -45,3 +62,4 @@ for i in range(1, len(group)):
 print(*group)
 
 
+"""
